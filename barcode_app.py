@@ -53,7 +53,7 @@ class BarcodeApp:
         barcode_obj = barcode_class(text, writer=ImageWriter())
 
         # Save barcode image correctly
-        self.barcode_path = barcode_obj.save(text)  # ✅ Fix: No need to add ".png" manually
+        self.barcode_path = barcode_obj.save(text)
 
         # Display the barcode
         img = Image.open(self.barcode_path)
